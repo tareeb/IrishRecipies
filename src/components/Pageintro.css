@@ -1,0 +1,31 @@
+.pageintro{
+    min-height: 40vh;
+    background-image: url("../images/bg-3.jpg");
+    background-color: #1e645e4a;;
+    background-blend-mode: color;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+}   
+
+.pageintro h1{
+    font-size: 40px;
+}
+
+.pageintro p{
+}
+
+p.Page_intro{
+    padding: 0px 50px;
+    font-size: 16px;
+    font-weight: 500;
+}

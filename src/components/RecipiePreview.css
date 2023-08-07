@@ -1,0 +1,8 @@
+.bookpreview{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.bookpreview .recipie{
+    padding: 0px 30px;
+}

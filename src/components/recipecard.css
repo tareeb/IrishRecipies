@@ -1,0 +1,80 @@
+.Recipecard{
+    display: flex;
+    justify-content: center;
+    background-color:transparent;
+    overflow: hidden;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.Recipecard_image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+}
+
+.Recipecard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Recipecard_image_container div{
+    background-color: #215a55;
+    width: 100%;
+    padding: 20px;
+}
+.Recipecard_image_container h1{
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.Recipecard_content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15% 10%;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #087e74a7;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top:-100%;
+    transition: all 0.5s;
+}
+
+.Recipecard_content h2{
+    font-size: 14px;
+    color:#ff7a5c ; 
+}
+.Recipecard_content h1{
+    font-size: 18px;
+}
+.Recipecard_content p {
+    font-size: 16px;
+}
+
+
+.Recipecard:hover{
+    cursor: pointer;
+}
+.Recipecard:hover .Recipecard_content{
+    top: 0%;
+}
+
+.Recipecard_content a{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+

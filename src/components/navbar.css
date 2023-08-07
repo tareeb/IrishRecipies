@@ -1,0 +1,220 @@
+.logo span{
+    color: #2b7f78;
+}
+.logo{
+    text-align: center;
+}
+.logo h1{
+    font-size: 23px;
+}
+.logo h2{
+    font-size: 16px ;
+    letter-spacing: 1.1px;
+    color: rgba(0,0,0,.3);
+}
+
+
+.search_bar{
+    display: flex;
+}
+
+.search_bar input{
+    height: 40px;
+    padding-left: 8px;
+    background-color: #efefef ; 
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 100%;
+    border: none;
+}
+
+.search_bar .search_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 50px;
+    padding: 0px 8px;
+    border-bottom-right-radius: 50px;
+    
+    background-color: #2b7f78;
+    border: 1px solid #2b7f78;
+}
+
+.search_bar svg {
+    fill: white;
+    height: 24px;
+    width: 24px;
+}
+
+.menu_part{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_part ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+}
+
+.menu_part ul li {
+    gap:10px;
+}
+
+.menu_part ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.menu_part ul li a:hover {
+    color: #2b7f78;
+    cursor: pointer;
+}
+.menu_part ul li a::before{
+    transition: all 0.5s;
+    content: '';
+    background-color: #2b7f78;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    left:0px
+}
+.menu_part ul li a:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+
+
+.menu_mobile{
+    display: none;
+    background-color: rgb(46, 46, 46);
+    justify-content: center;
+    align-items: center;
+}
+.Button_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Button_Container button{
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+    gap:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Button_Container button{
+    font-size: 18px;
+    color: white;
+}
+.Button_Container button svg{
+    fill: white;
+}
+.link_container ul {
+    text-align: center;
+    list-style: none;
+}
+.link_container ul li {
+    margin-bottom: 10px;
+}
+.link_container ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    position: relative;
+    transition: all 0.5s ;
+}
+.link_container ul li a:hover {
+    color: #95adbe;
+    cursor: pointer;
+}
+.link_container ul li a::before{
+    transition: all 0.5s cubic-bezier(0.5, 0.52, 0.79, 0.03);
+    content: '';
+    background-color: #2b7f78;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    left:0px
+}
+.link_container ul li a:hover::before{
+    width: 100%;
+}
+
+
+
+
+.link_container{
+    height: 0px;
+    overflow: hidden;
+}
+.link_container.active{
+    height: 100%;
+}
+
+
+
+.pageloading{
+    position: absolute;
+    min-height: 3px;
+    min-width: 100%;
+}
+.fillcolor{
+    transition: width 1s ease-in-out;
+    background-color: #2b7f78; 
+}
+               
+
+
+@media (max-width: 600px) {
+    .top_part{
+        flex-direction: column;
+        gap: 15px;
+        padding: 4% ;
+    }
+
+    
+    .searchbar_container{
+        width: 100%;
+    }
+
+    .search_input{
+        flex:1;
+    }
+
+    .top_part > div:first-child {
+        order: 3    ;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .menu_part{
+        padding: 3% 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu_part{
+       display: none;
+    }
+
+    .menu_mobile{
+        display: block;
+    }
+
+}

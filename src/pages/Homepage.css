@@ -1,0 +1,396 @@
+.herosection {
+    background-image: url(./../images/bg1.jpg);
+    min-height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: center;
+    background-attachment: fixed;
+}
+
+.hero_content{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5%;
+    color: white;
+
+}
+.hero_content h1{
+    font-size: 48px;
+    font-weight:400;
+    margin-bottom: 10px;
+}
+.hero_content p {
+    font-size: 20px;
+}
+
+.HeroButtons{
+    display: flex;
+    gap: 10px;
+}
+.HeroButtons button{
+    padding: 20px;
+    border: transparent;
+    transition: all 0.5s;
+}
+.HeroButtons button a{
+    text-decoration: none;
+    font-weight: bold;
+}
+#btn1{
+    background-color: #087469;
+}#btn1 a{
+    color: white;
+}
+
+#btn2{
+    background-color: white;
+}#btn2 a{
+    color: black;
+}
+
+#btn1:hover a{
+    color: black;
+}#btn1:hover{
+    background-color: #6f9dbf;
+}
+#btn2:hover a{
+    color: white;
+}#btn2:hover{
+    background-color: rgb(49, 49, 49);
+}
+
+/* 
+//////////////////////////////////////////////////////////////////////// */
+.service{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.circle{
+    width: 150px;
+    min-height: 150px;
+    background-color: #008277ee;
+    border-radius: 50%;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.circle p{
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    top:60px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.Service_Container{
+    padding:0 10% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transform: translateY(-30%);
+}
+
+.service:hover{
+    cursor: pointer;
+}
+
+.service:hover p{
+    color:#087469 ;
+    font-size: 24px;
+    top:50px;
+}
+.service:hover .circle{
+    border: 2px solid #087469;
+    background-color: rgba(139, 255, 242, 0.281)
+}
+
+/* #service1::before{
+    content: "\f100" ; 
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: aqua;
+    width: 10px;
+    height: 10px;
+}
+ */
+/* 
+///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.statssection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 13%;
+    background-color: #f5f4f0;
+}
+.statssection div p {
+    color: rgba(0, 0, 0, 0.3);
+}
+.statssection div{
+    text-align: center;
+}
+
+
+/* 
+//////////////////////////////////////////////////////////////////////////////////// */
+
+.welcomesection{
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome_image{
+    min-width: 50%;
+}
+.welcome_image img{
+    width: 100%;
+}
+.welcome_content{
+    min-width: 50%;
+    padding-left: 5%;
+}
+.welcome_content h2{
+    font-size: 18px;
+    color: #ff7a5c;
+}
+.welcome_content h1{
+    margin-bottom: 10px;
+}
+.welcome_content p {
+    color: gray;
+    margin-bottom: 20px;
+}
+.welcome_content  a{
+    background-color: #2c6c9d;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.welcome_content a:hover{
+    background-color: #6f9dbf;
+}
+
+/* ////////////////////////////////////////////////////////// */
+.recipessection_header h1{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+.recipessection{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 3%;
+    gap: 20px;
+}
+
+
+/* //////////////////////////////////////////////////////// */
+
+.Testimonialsection{
+    background-image: url(../images/bg-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #6fbebf;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    min-height: 70vh;
+
+    text-align: center;
+    color: rgba(255, 255, 255, 0.879);
+}
+
+
+.TestimonialHeader{
+   padding-top: 5% ;
+}
+
+.TestimonialHeader h2{
+    font-size: 30px;
+    color: #087469;
+    margin-bottom: 20px;
+}
+
+.TestimonialContainer{
+        overflow: hidden; 
+        margin: 0% 10%;
+        transition: all 0.5s;
+}
+
+.testimonialslider{
+        display: flex;
+        align-items: stretch;
+        justify-content:flex-start;
+        transition: all 0.5s;
+        position: relative;
+        right:0 ; 
+        
+}
+
+
+.Testimonial p , .Testimonial h1 , .Testimonial h2{
+    color: black;
+}
+
+.Testimonial{
+    min-width: 50%;    
+    position: relative;
+    padding: 50px 20px;
+    overflow: visible;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.524);
+    border: 2px solid #087469;
+}
+.clientinfo{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.clientinfo h1{
+    font-size:18px;
+} 
+.clientinfo h2{
+    font-size:14px;
+    color: rgba(0, 0, 0, 0.741);
+} 
+
+.testimonial_btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.testimonial_btn_container button{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.898);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.testimonial_btn_container button:hover{
+    background-color: #087469;
+}
+.testimonial_btn_container svg{
+    fill:#087469;
+    width: 20px;
+    height: 20px;
+}
+.testimonial_btn_container button:hover svg{
+    fill:white;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* when minimum screen reacehs 600 */
+@media screen and (max-width: 800px) {
+    .hero_content h1{
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero_content h1{
+        font-size: 40px;
+    }
+    .HeroButtons{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+   .Service_Container{
+    flex-direction: column;
+    margin-top: 20px;
+    transform: translateY(0);
+    margin-bottom: 30px;
+   }
+
+   .statssection{
+    flex-direction: column;
+   }
+   .statssection div{
+    margin-bottom: 30px;
+    text-align: center;
+   }
+
+
+   .recipessection{
+    flex-direction: column;
+    padding: 10%;
+   }
+   .recipessection div{
+    margin-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 820px) {
+    .statssection div p{
+        font-size: 14px;
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    .welcome_image{
+        display: none;
+    }
+     .herosection {
+         background-position: 70%;
+     }
+     .recipessection{
+            align-items: center;
+     }
+}
+
+@media screen and (max-width: 850px) {
+    .welcome_content h2{
+        font-size: 18px;
+    }
+    .welcome_content h1{
+        font-size: 22px;
+    }
+    .welcome_content p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .Testimonial p{
+        font-size: 14px;
+    }
+    .clientinfo h1{
+        font-size:16px;
+    } 
+    .clientinfo h2{
+        font-size:12px;
+    } 
+}

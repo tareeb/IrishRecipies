@@ -1,0 +1,171 @@
+.recipepreview_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.preview_button{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+}
+
+.preview_button button{
+    padding: 10px 20px;
+    border: 2px solid #215a55;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.recipereviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.reviews{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.review.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.review.input textarea {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.review{
+   padding: 10px;
+   background-color: #1ba4997e;
+   border: 2px solid black;
+   border-radius: 20px;
+   transition: all 0.3s;
+}
+
+.review h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.comment{
+    padding: 10px;
+    background-color: #097f758f;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.comment.menu{
+    display:flex ; 
+    gap: 10px;
+}
+
+.comment.menu input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.comment.menu button{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #215a55;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.comment.menu button:hover{
+    cursor: pointer;
+    background-color: #215a55;
+    color: white;
+}
+
+.reviews_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.reviews_button button , .readmore-button{
+    padding: 5px 10px;
+    border: 2px solid #215a55;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5px 0px;
+    transition: all 0.5s;
+}
+
+.reviews_button button:hover , .readmore-button:hover , .preview_button button:hover{
+    background-color: #215a55;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+
+    .reviews{
+        flex-direction: column;
+    }
+    
+    .recipepreview_container{
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+    .recipereviews{
+        padding: 30px;
+    }
+
+    .recipepreview_container{
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    
+    textarea {
+        width: 200px;
+    }
+
+    .recipereviews{
+        padding: 20px;
+    }
+
+    .recipepreview_container{
+        padding: 20px;
+    }
+
+}
